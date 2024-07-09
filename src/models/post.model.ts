@@ -16,6 +16,18 @@ const PostSchema: Schema<IPost> = new Schema(
       type: [String],
       default: []
     },
+    location: {
+      type: String,
+      required: true
+    },
+    category: {
+      type: String,
+      required: true
+    },
+    front: {
+      type: String,
+      required: true,
+    },
     source: {
       type: String,
     },
