@@ -8,7 +8,7 @@ export const sendEmailContact: RequestHandler = async (req: Request, res: Respon
 
     if (!send) throw Error();
     
-    return res.status(200).json({message: 'El email se envió con éxito!'});
+    return res.status(200).json({message: 'Tu mensaje ha sido enviado exitosamente.', status: 200});
 
   } catch (error) {
     console.log('Error sendMail: ', error);
